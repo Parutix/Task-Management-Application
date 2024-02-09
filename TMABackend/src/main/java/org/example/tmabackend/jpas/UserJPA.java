@@ -16,14 +16,6 @@ public class UserJPA {
     private String user_password;
     private String full_name;
 
-    public int getUser_id() {
-        return user_id;
-    }
-
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
-    }
-
     public String getUsername() {
         return username;
     }
