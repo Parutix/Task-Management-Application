@@ -1,5 +1,6 @@
 package org.example.tmabackend.services;
 
+import org.apache.commons.validator.routines.EmailValidator;
 import org.example.tmabackend.jpas.UserJPA;
 import org.example.tmabackend.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,4 +25,20 @@ public class UserService {
 
         userRepository.save(user);
     }
+    public boolean checkEmail(String email) {
+        return EmailValidator.getInstance().isValid(email);
+    }
+
+    public boolean checkPassword(String user_password) {
+        return user_password.length() >= 7;
+    }
+
+    public boolean checkUsername(String username) {
+        return username.length() >= 6;
+    }
+
+    public boolean checkFullName(String full_name) {
+        return full_name.length() >= 3;
+    }
 }
+
