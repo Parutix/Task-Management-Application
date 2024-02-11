@@ -1,0 +1,45 @@
+body {
+  background-color: #ffffff;
+  color: #2d545e;
+}
+
+.background_container {
+  position: relative;
+  height: 100vh;
+}
+
+.welcome_box {
+  position: absolute;
+  border-radius: 1.5%;
+  padding: 10% 20%;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #2d545e;
+  color: white;
+}
+.welcome_box h1 {
+  font-size: 2.5 rem;
+}
+
+.buttons_box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 2% 0;
+}
+.buttons_box button {
+  padding: 2% 5%;
+  border: none;
+  border-radius: 5%;
+  background-color: #12343b;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}/*# sourceMappingURL=OverviewPage.css.map */
