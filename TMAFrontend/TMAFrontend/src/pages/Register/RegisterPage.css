@@ -1,0 +1,64 @@
+body {
+  background-color: #ffffff;
+  color: #de703c;
+  margin: 0;
+  font-family: Georgia, serif;
+}
+
+.background_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+.background_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.register_box {
+  border: #fbb040 3px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: auto;
+  padding: 50px 20px;
+  border-radius: 10%;
+  background-color: #de703c;
+  color: #ffffff;
+}
+.register_box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.register_box input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5%;
+  border: none;
+}
+.register_box .button {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10%;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  background-color: #fbb040;
+  color: #ffffff;
+  text-decoration: none;
+}/*# sourceMappingURL=RegisterPage.css.map */
