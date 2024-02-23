@@ -33,6 +33,9 @@ dependencies {
     runtimeOnly 'com.mysql:mysql-connector-j'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.apache.httpcomponents.client5:httpclient5'
+    implementation 'org.springframework.security:spring-security-crypto:5.7.2'
+    implementation 'commons-logging:commons-logging-api:1.1'
 }
 
 tasks.named('test') {

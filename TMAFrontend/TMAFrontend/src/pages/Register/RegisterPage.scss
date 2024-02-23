@@ -1,0 +1,70 @@
+$background-color: #ffffff;
+$accent-color1: #de703c;
+$accent-color2: #fbb040;
+
+body {
+  background-color: $background-color;
+  color: $accent-color1;
+  margin: 0;
+  font-family: Georgia, serif;
+}
+
+.background_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+.background_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.register_box {
+  border: $accent-color2 3px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: auto;
+  padding: 50px 20px;
+  border-radius: 10%;
+  background-color: $accent-color1;
+  color: $background-color;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5%;
+    border: none;
+  }
+
+  .button {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10%;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: $accent-color2;
+    color: $background-color;
+    text-decoration: none;
+  }
+}
