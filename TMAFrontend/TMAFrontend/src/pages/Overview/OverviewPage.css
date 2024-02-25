@@ -2,10 +2,9 @@ body {
   background-color: #ffffff;
   color: #de703c;
   margin: 0;
-  font-family: Georgia, serif;
 }
 
-.background_container {
+.background_container_overview {
   background-size: cover;
   background-position: center;
   position: relative;
@@ -26,8 +25,8 @@ body {
 .welcome_box {
   position: absolute;
   border-radius: 1.5%;
-  padding: 8% 16%;
-  width: 50%;
+  padding: 8% 20%; /* Increase padding on left and right */
+  width: 60%; /* Adjust width as needed */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -36,7 +35,8 @@ body {
   color: white;
 }
 .welcome_box h1 {
-  font-size: 2.5 rem;
+  font-size: 2rem;
+  width: 100%; /* Make h1 width 100% */
 }
 
 .buttons_box {
@@ -58,6 +58,6 @@ body {
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  text-decoration: none; /* Ensure links don't have underlines */
-  display: inline-block; /* Ensure links behave like buttons */
+  text-decoration: none;
+  display: inline-block;
 }/*# sourceMappingURL=OverviewPage.css.map */
