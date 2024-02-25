@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const OverviewPage = () => {
   return (
-    <div className="background_container">
+    <div className="background_container_overview">
       <img
         src={backgroundImage}
         alt="background"
