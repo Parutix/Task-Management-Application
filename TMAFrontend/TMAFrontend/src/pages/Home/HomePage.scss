@@ -1,18 +1,39 @@
-$background-color: #ffffff;
-$accent-color1: #de703c;
-$accent-color2: #fbb040;
+$font-color: #ffffff;
+$color1: #de703c;
+$color2: #fbb040;
 
 body {
-  color: $accent-color1;
+  color: $color1;
   margin: 0;
   font-family: Georgia, serif;
 }
 
 .home_background_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  background-color: $accent-color1;
+  background-color: $color1;
   background-size: cover;
   background-position: center;
   position: relative;
   height: 100vh;
+
+  h1 {
+    font-size: 3rem;
+    color: $font-color;
+  }
+
+  button {
+    margin: 20px 0;
+    border: none;
+    background-color: $color2;
+    text-decoration: none;
+    color: $font-color;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10%;
+  }
 }
