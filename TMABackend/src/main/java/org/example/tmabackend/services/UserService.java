@@ -56,5 +56,9 @@ public class UserService {
         }
         return false;
     }
+
+    public UserJPA getUserByUsername(String username) {
+        return userRepository.findByUsername(username);
+    }
 }
 
