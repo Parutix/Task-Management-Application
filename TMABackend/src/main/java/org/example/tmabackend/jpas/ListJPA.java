@@ -9,22 +9,24 @@ import jakarta.persistence.*;
 public class ListJPA {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int user_id;
-    private int list_id;
+    @Column(name="user_id")
+    private int userId;
+    @Column(name="list_id")
+    private int listId;
 
-    public int getUser_id() {
-        return user_id;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
-    public int getList_id() {
-        return list_id;
+    public int getListId() {
+        return listId;
     }
 
-    public void setList_id(int list_id) {
-        this.list_id = list_id;
+    public void setListId(int listId) {
+        this.listId = listId;
     }
 }
