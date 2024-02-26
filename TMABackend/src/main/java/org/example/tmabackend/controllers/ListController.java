@@ -1,0 +1,9 @@
+package org.example.tmabackend.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/list")
+public class ListController {
+}
