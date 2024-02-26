@@ -10,6 +10,7 @@ import OverviewPage from "./pages/Overview/OverviewPage";
 import RegisterPage from "./pages/Register/RegisterPage";
 import HomePage from "./pages/Home/HomePage";
 import LoginPage from "./pages/Login/LoginPage";
+import AddList from "./pages/AddList/AddList";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function AppLayout() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
+        <Route path="/add-list" element={<AddList />} />
       </Routes>
     </div>
   );

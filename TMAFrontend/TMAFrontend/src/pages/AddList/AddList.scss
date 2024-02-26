@@ -1,0 +1,37 @@
+$font-color: #ffffff;
+$color1: #de703c;
+$color2: #fbb040;
+
+body {
+  background-color: $color1;
+  margin: 0;
+  font-family: Georgia, serif;
+}
+
+.add_list_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $font-color;
+
+  input {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  button {
+    margin: 20px 0;
+    border: none;
+    background-color: $color2;
+    text-decoration: none;
+    color: $font-color;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5%;
+  }
+}
