@@ -9,5 +9,7 @@ import java.util.List;
 
 @Repository
 public interface ListRepository extends JpaRepository<ListJPA, Integer> {
-    List<ListJPA> findAllByUserId(int user_id);
+    List<ListJPA> findAllListsByUserId(int user_id);
+    ListJPA findFirstByOrderByListIdDesc();
+    int countByUserId(int user_id);
 }

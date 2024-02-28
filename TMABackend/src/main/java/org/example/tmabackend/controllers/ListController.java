@@ -21,8 +21,11 @@ public class ListController {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<?> addList(@RequestParam int user_id) {
-        List<ListJPA> list = listService.checkList(user_id);
-        return new ResponseEntity<>(list, HttpStatus.OK);
+    public ResponseEntity<?> addList(@RequestParam int user_id, @RequestParam String list_name) {
+        if(listService.addList(user_id, list_name)) {
+            return new ResponseEntity<>("List Added!", HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>("Too many lists!", HttpStatus.BAD_REQUEST);
+        }
     }
 }

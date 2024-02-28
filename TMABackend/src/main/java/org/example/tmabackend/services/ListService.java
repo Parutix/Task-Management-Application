@@ -16,16 +16,14 @@ public class ListService {
         this .listRepository = listRepository;
     }
 
-    public void addList(int user_id, int list_id) {
+    public boolean addList(int user_id, String list_name) {
+
         ListJPA list = new ListJPA();
         list.setUserId(user_id);
-        list.setListId(list_id);
+        list.setList_name(list_name);
 
         listRepository.save(list);
+        return true;
     }
 
-    public List<ListJPA> checkList(int user_id) {
-        List<ListJPA> list = listRepository.findAllByUserId(user_id);
-        return list;
-    }
 }
