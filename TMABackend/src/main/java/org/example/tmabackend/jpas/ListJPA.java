@@ -14,6 +14,7 @@ public class ListJPA {
     @Column(name="user_id")
     private int userId;
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="list_id")
     private int listId;
     private String list_name;
