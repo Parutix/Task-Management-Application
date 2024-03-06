@@ -26,4 +26,9 @@ public class ListService {
         return true;
     }
 
+    public List<ListJPA> getListsByUser(int user_id) {
+        List<ListJPA> userLists = listRepository.findAllListsByUserId(user_id);
+        return userLists;
+    }
+
 }
