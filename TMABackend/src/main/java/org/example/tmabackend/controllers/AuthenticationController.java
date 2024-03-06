@@ -12,7 +12,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/api/auth")
 public class AuthenticationController {
     private UserService userService;
