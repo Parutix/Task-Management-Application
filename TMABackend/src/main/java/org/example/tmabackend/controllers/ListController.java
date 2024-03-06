@@ -28,4 +28,14 @@ public class ListController {
             return new ResponseEntity<>("Too many lists!", HttpStatus.BAD_REQUEST);
         }
     }
+
+    @GetMapping("/get-lists")
+    public ResponseEntity<?> getLists(@RequestParam int user_id) {
+        List<ListJPA> list = listService.getListsByUser(user_id);
+        if(list != null) {
+            return new ResponseEntity<>(list, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>("Something went wrong retrieving lists!", HttpStatus.BAD_REQUEST);
+        }
+    }
 }
